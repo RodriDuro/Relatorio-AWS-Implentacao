@@ -1,0 +1,103 @@
+# Relatório de Implementação de Serviços AWS
+
+**Empresa:** Abstergo Soluções Farmacêuticas
+**Autor:** Rodrigo Duro
+**Data:** 03/08/2025
+
+## Objetivo
+
+Este relatório apresenta a implementação estratégica de três serviços fundamentais da Amazon Web Services (AWS) na infraestrutura da Abstergo Soluções Farmacêuticas, visando otimização operacional, redução de custos e conformidade regulatória no setor farmacêutico.
+
+## Serviços AWS Implementados
+
+### 1. Amazon S3 (Simple Storage Service)
+
+**Caso de Uso:** Repositório centralizado para armazenamento de documentos regulatórios, incluindo laudos laboratoriais, estudos clínicos digitalizados, dossiês de registro de medicamentos e arquivos de pesquisa e desenvolvimento (P&D).
+
+**Benefícios Técnicos:**
+- Durabilidade de 99,999999999% (11 9's) com replicação automática
+- Versionamento de objetos para controle de alterações em documentos críticos
+- Políticas de acesso granular via IAM para compartilhamento seguro com parceiros e órgãos reguladores
+- Integração nativa com serviços de compliance e auditoria
+
+**Referência Técnica:**
+- [Documentação Oficial Amazon S3](https://docs.aws.amazon.com/pt_br/AmazonS3/latest/userguide/Welcome.html)
+
+
+### 2. Amazon RDS (Relational Database Service)
+
+**Caso de Uso:** Gerenciamento de bases de dados relacionais para estudos clínicos, controle de estoque de insumos farmacêuticos, cadastro de fornecedores qualificados e histórico de projetos de pesquisa.
+
+**Benefícios Técnicos:**
+- Backup automatizado com Recovery Point Objective (RPO) de até 5 minutos
+- Alta disponibilidade através de Multi-AZ deployment com failover automático
+- Escalabilidade horizontal e vertical sob demanda
+- Integração com ferramentas de Business Intelligence e análise de dados
+- Redução de até 70% no tempo de administração de banco de dados
+
+**Referência Técnica:**
+- [Documentação Amazon RDS](https://docs.aws.amazon.com/pt_br/AmazonRDS/latest/UserGuide/Welcome.html)
+
+
+### 3. Amazon SageMaker
+
+**Caso de Uso:** Plataforma de machine learning para análise preditiva de qualidade de lotes, identificação de tendências de mercado farmacêutico e detecção de anomalias em resultados de testes laboratoriais.
+
+**Benefícios Técnicos:**
+- Ambiente de desenvolvimento integrado para modelos de ML com notebooks Jupyter
+- Algoritmos pré-construídos otimizados para análise farmacêutica
+- Redução de até 85% no tempo de desenvolvimento de modelos preditivos
+- Escalabilidade automática de recursos computacionais baseada na demanda
+- Integração com pipelines de CI/CD para deployment automatizado de modelos
+
+**Referência Técnica:**
+- [Documentação Amazon SageMaker](https://docs.aws.amazon.com/sagemaker/latest/dg/whatis.html)
+
+
+## Resultados Esperados
+
+### Impacto Financeiro
+- **Redução de Custos Operacionais:** Estimativa de 30-40% de economia através da eliminação de infraestrutura local e adoção do modelo de precificação pay-as-you-use
+- **CAPEX para OPEX:** Conversão de investimentos em capital para despesas operacionais, melhorando o fluxo de caixa
+
+### Escalabilidade e Performance
+- **Elasticidade:** Capacidade de adaptação automática dos recursos conforme crescimento do negócio ou picos de demanda regulatória
+- **Disponibilidade:** SLA de 99,9% para todos os serviços implementados
+
+### Compliance e Governança
+- **Conformidade Regulatória:** Manutenção automatizada de logs de auditoria, backups e rastreabilidade de dados em conformidade com regulamentações ANVISA, FDA e ICH-GCP
+- **Segurança:** Implementação de controles de acesso baseados em perfis e criptografia end-to-end
+
+
+## Recomendações para Implementações Futuras
+
+### Fase 2 - Otimização e Automação
+- **AWS Auto Scaling:** Implementação de políticas de escalabilidade automática para bancos de dados e sistemas analíticos, visando otimização contínua de custos e estabilidade operacional
+- **Monitoramento Avançado:** Deploy do Amazon CloudWatch para métricas em tempo real e alertas proativos
+
+### Fase 3 - Compliance e Auditoria
+- **AWS CloudTrail:** Implementação de trilhas de auditoria para rastreabilidade completa de acessos e modificações de dados
+- **AWS Config:** Configuração de regras de compliance automáticas alinhadas às boas práticas farmacêuticas e regulamentações internacionais
+
+### Fase 4 - Arquivamento Inteligente
+- **Amazon S3 Glacier:** Migração de dados históricos de pesquisas concluídas para storage de baixo custo, com políticas de lifecycle management automatizadas
+
+
+## Referências Bibliográficas
+
+1. Amazon Web Services. (2024). *AWS in the Pharmaceutical Industry: Powering Drug Discovery, Development and Beyond*. [Whitepaper]. Disponível em: https://intuitionlabs.ai/pdfs/aws-in-the-pharmaceutical-industry-powering-drug-discovery-development-and-beyond.pdf
+
+2. Amazon Web Services. (2023). *Highlights from the AWS Life Sciences Executive Symposium 2023: Accelerating Pharma Drug Discovery with Machine Learning*. [Blog Post]. Disponível em: https://aws.amazon.com/blogs/industries/highlights-from-the-aws-life-sciences-executive-symposium-2023-accelerating-pharma-drug-discovery-with-machine-learning/
+
+3. International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH). (2024). *ICH Guidelines on Good Clinical Practice (GCP)*. 
+
+4. Agência Nacional de Vigilância Sanitária (ANVISA). (2024). *Regulamentação Técnica para Estudos Clínicos*. Brasília: ANVISA.
+
+---
+
+**Documento elaborado por:** Rodrigo Duro  
+**Função:** Especialista em Arquitetura de Soluções AWS  
+**Data de elaboração:** 03 de agosto de 2025  
+**Versão:** 1.0
+
+
